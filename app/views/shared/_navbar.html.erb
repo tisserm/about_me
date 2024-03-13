@@ -1,0 +1,52 @@
+<nav class="bg-slate-200 dark:bg-gray-700 sticky top-0" data-controller="navbar">
+  <div class="mx-auto max-w-7xl px-2 sm:px-6 lg:px-8">
+    <div class="relative flex h-16 items-center justify-between">
+      <div class="absolute inset-y-0 left-0 flex items-center sm:hidden">
+        <% # Mobile menu button %>
+        <button type="button" class="relative inline-flex items-center justify-center rounded-md p-2 text-gray-700 dark:text-gray-400 hover:bg-slate-300 dark:hover:bg-gray-700 dark:hover:text-white focus:outline-none focus:ring-2 focus:ring-inset focus:ring-slate-500 dark:focus:ring-white" aria-controls="mobile-menu" aria-expanded="false" data-action="navbar#toggleMenu">
+          <span class="absolute -inset-0.5"></span>
+          <span class="sr-only">Open main menu</span>
+          <% # Closed menu icon %>
+          <svg class="block h-6 w-6" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true" data-navbar-target="closeIcon">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+          </svg>
+          <% # Opened menu icon %>
+          <svg class="hidden h-6 w-6" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true" data-navbar-target="openIcon">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
+          </svg>
+        </button>
+      </div>
+      <% # Desktop menu %>
+      <div class="flex flex-1 items-center justify-center sm:items-stretch sm:justify-start">
+        <div class="hidden sm:ml-6 sm:block">
+          <div class="flex space-x-4">
+            <%= navigation_links(mobile: false) %>
+          </div>
+        </div>
+      </div>
+      <% # Moon/sun icons container %>
+      <div class="absolute inset-y-0 right-0 flex items-center pr-2 sm:static sm:inset-auto sm:ml-6 sm:pr-0">
+
+        <button type="button" class="relative rounded-full bg-slate-200 dark:bg-gray-700 p-1 text-gray-700 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-white focus:outline-none focus:ring-2 focus:ring-slate-500 dark:focus:ring-white focus:ring-offset" data-action="dark-mode#toggleTheme">
+          <span class="absolute -inset-1.5"></span>
+          <span class="sr-only">Toggle dark mode</span>
+          <% # Moon icon %>
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6" data-dark-mode-target="darkModeIcon">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M21.752 15.002A9.72 9.72 0 0 1 18 15.75c-5.385 0-9.75-4.365-9.75-9.75 0-1.33.266-2.597.748-3.752A9.753 9.753 0 0 0 3 11.25C3 16.635 7.365 21 12.75 21a9.753 9.753 0 0 0 9.002-5.998Z" />
+          </svg>
+          <% # Sun icon %>
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="hidden w-6 h-6" data-dark-mode-target="lightModeIcon">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M12 3v2.25m6.364.386-1.591 1.591M21 12h-2.25m-.386 6.364-1.591-1.591M12 18.75V21m-4.773-4.227-1.591 1.591M5.25 12H3m4.227-4.773L5.636 5.636M15.75 12a3.75 3.75 0 1 1-7.5 0 3.75 3.75 0 0 1 7.5 0Z" />
+          </svg>
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <% # Mobile menu %>
+  <div class="sm:hidden hidden" id="mobile-menu" data-navbar-target="mobileMenu">
+    <div class="space-y-1 px-2 pb-3 pt-2">
+      <%= navigation_links(mobile: true) %>
+    </div>
+  </div>
+</nav>
