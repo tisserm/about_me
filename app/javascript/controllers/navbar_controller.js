@@ -1,5 +1,5 @@
 import { Controller } from "@hotwired/stimulus";
-import VisibleElement from "../lib/visibleElement";
+import VisibleElement from "lib/visibleElement";
 
 export default class extends Controller {
   static targets = ["openIcon", "closeIcon", 'mobileMenu'];
