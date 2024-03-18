@@ -1,6 +1,14 @@
 # TODO
-- Page CV (p1)
-  - Timeline scrollable
-  - Skills
-- Traduction fr/en (p2)
-- Page portfolio (p2)
+
+## P1
+
+### Changer la favicon
+- :wave: probablement
+
+## P2
+
+### Traduction fr/en
+- via un bouton à côté du dark mode
+
+### Page portfolio
+  - screenshots flatlooker

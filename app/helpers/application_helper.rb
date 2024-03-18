@@ -4,7 +4,7 @@ module ApplicationHelper
   def navigation_links(mobile: false)
     links = [
       { url: root_path, text: 'About me' },
-      { url: resume_path, text: 'Resume' },
+      { url: resume_path, text: 'Resume & skills' },
       { url: portfolio_path, text: 'Portfolio' },
       { url: malt_url, text: 'Contact me on Malt' }
     ]
@@ -30,7 +30,7 @@ module ApplicationHelper
 
   def nav_item_classes
     <<~CLASSES.squish
-      text-slate-500 dark:text-gray-300 hover:bg-slate-300 dark:hover:bg-gray-800 hover:text-slate-700 
+      text-gray-700 dark:text-gray-300 hover:bg-slate-300 dark:hover:bg-gray-800 hover:text-slate-700
       dark:hover:text-white rounded-md px-3 py-2 text-sm font-medium
     CLASSES
   end
@@ -43,7 +43,7 @@ module ApplicationHelper
 
   def mobile_nav_item_classes
     <<~CLASSES.squish
-      text-slate-500 dark:text-gray-300 hover:bg-slate-300 dark:hover:bg-gray-700 hover:text-white block rounded-md 
+      text-gray-700 dark:text-gray-300 hover:bg-slate-300 dark:hover:bg-gray-700 hover:text-white block rounded-md
       px-3 py-2 text-base font-medium
     CLASSES
   end

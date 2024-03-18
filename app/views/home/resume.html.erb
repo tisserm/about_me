@@ -1,5 +1,121 @@
-<div class="w-full">
+<div class="w-full mb-8">
   <h1 class="text-center text-4xl mb-8">Resume</h1>
 
-  <h2 class="text-center text-2xl">Soon™</h2>
+  <div class="relative">
+    <span class="block absolute w-1 top-0 bottom-0 left-1/3 sm:left-1/4 bg-gray-400 dark:bg-slate-200 rounded-full mt-1" aria-hidden="true"></span>
+
+    <div class="relative">
+      <div class="block absolute -ml-1.5 w-4 h-4 top-1 bottom-0 left-1/3 sm:left-1/4 rounded-full bg-gray-900 dark:bg-indigo-600" aria-hidden="true"></div>
+      <div class="flex">
+        <div class="basis-1/3 sm:basis-1/4 pr-7 text-right">1997</div>
+        <div class="basis-2/3 sm:basis-3/4 pl-7">
+          Born in France, I'm currently <%= @age %> years old!
+        </div>
+      </div>
+    </div>
+
+    <div class="relative mt-4">
+      <div class="relative absolute -ml-1.5 w-4 h-4 top-1 bottom-0 left-1/3 sm:left-1/4 bg-slate-50 dark:bg-slate-800 rotate-90" aria-hidden="true">
+        <div class="block absolute w-1 h-4 top-0 bottom-0 left-0 bg-gray-400 dark:bg-slate-200" aria-hidden="true"></div>
+        <div class="block absolute w-1 h-4 top-0 bottom-0 right-0 bg-gray-400 dark:bg-slate-200" aria-hidden="true"></div>
+      </div>
+    </div>
+
+    <div class="relative mt-7">
+      <div class="block absolute -ml-1.5 w-4 h-4 top-1 bottom-0 left-1/3 sm:left-1/4 rounded-full bg-gray-900 dark:bg-indigo-600" aria-hidden="true"></div>
+      <div class="flex">
+        <div class="basis-1/3 sm:basis-1/4 pr-7 text-right">09/2015 - 07/2020</div>
+        <div class="basis-2/3 sm:basis-3/4 pl-7">
+          <strong>Education at EPITECH</strong>
+          <br />
+          5-year course focusing on the mastery of low-level computer languages (mainly C and C++) and the usage of many programming languages (Ruby, Python, Java, etc.).
+          <br />
+          EPITECH taught me how to manage with any language and how to learn one efficiently, it also gave knowledge on devops and sysadmin to a certain extent.
+        </div>
+      </div>
+    </div>
+
+    <div class="relative mt-7">
+      <div class="block absolute -ml-1.5 w-4 h-4 top-1 bottom-0 left-1/3 sm:left-1/4 rounded-full bg-gray-900 dark:bg-indigo-600" aria-hidden="true"></div>
+      <div class="flex">
+        <div class="basis-1/3 sm:basis-1/4 pr-7 text-right">09/2019 - 02/2024</div>
+        <div class="basis-2/3 sm:basis-3/4 pl-7">
+          <strong>Fullstack web developer at Manda (formerly Flatlooker)</strong>
+          <br />
+          Development of a rental management web platform to help tenants, landlords, real estate agents and property managers with their property management needs.
+          <ul class="list-disc list-inside">
+            <li>Development of public and private web interfaces with Bootstrap, Hotwire and Vue.js</li>
+            <li>Development of back-end logic in Ruby (Ruby on Rails framework)</li>
+            <li>Writing of unit, integration and end-to-end tests</li>
+            <li>Application performance optimisation</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <div class="relative mt-7">
+      <div class="block absolute -ml-1.5 w-4 h-4 top-1 bottom-0 left-1/3 sm:left-1/4 rounded-full bg-gray-900 dark:bg-indigo-600" aria-hidden="true"></div>
+      <div class="flex">
+        <div class="basis-1/3 sm:basis-1/4 pr-7 text-right">03/2024 - today</div>
+        <div class="basis-2/3 sm:basis-3/4 pl-7">
+          <strong>Maybe you?</strong>
+          <br />
+          I'm available to work on your projects, so please
+          <%= link_to malt_url, class: 'underline', aria: { label: 'Link to my profile on Malt' } do %>
+            contact me on Malt!
+          <% end %>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <h1 class="text-center text-4xl mb-8 mt-14">Skills</h1>
+
+  <div class="flex md:flex-row flex-col justify-around mx-5">
+    <div class="min-w-64">
+      <h2 class="text-2xl my-5">Tech skills</h2>
+
+      <div class="max-w-md">
+        <% @skills.each do |skill_name, skill_rating| %>
+          <div class="flex gap-4">
+            <span class="basis-1/2">
+              <%= skill_name %>
+            </span>
+            <div class="flex basis-1/2">
+              <% skill_rating.times do %>
+                <%= render partial: 'shared/svg/star' %>
+              <% end %>
+            </div>
+          </div>
+        <% end %>
+      </div>
+    </div>
+
+    <div class="min-w-64">
+      <h2 class="text-2xl my-5">Languages</h2>
+
+      <div class="max-w-md">
+        <div class="flex gap-4">
+          <span class="basis-1/2">
+            French
+          </span>
+          <div class="flex basis-1/2">
+            <% 5.times do %>
+              <%= render partial: 'shared/svg/star' %>
+            <% end %>
+          </div>
+        </div>
+      <div class="flex gap-4">
+          <span class="basis-1/2">
+            English
+          </span>
+          <div class="flex basis-1/2">
+            <% 5.times do %>
+              <%= render partial: 'shared/svg/star' %>
+            <% end %>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
 </div>

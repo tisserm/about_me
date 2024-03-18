@@ -1,29 +1,29 @@
 <div class="w-full">
   <h1 class="text-center text-4xl mb-8">Hello world!</h1>
 
-  <figure class="flex flex-col lg:flex-row px-4">
+  <figure class="flex flex-col lg:flex-row px-4" aria-label="About me section">
     <div class="lg:w-4/12">
-      <%= image_tag 'me.jpg', class: 'rounded-full w-40 h-40 lg:w-60 lg:h-60 object-cover mx-auto my-5 shadow-xl' %>
+      <%= image_tag 'me.jpg', class: 'rounded-full w-40 h-40 lg:w-60 lg:h-60 object-cover mx-auto my-5 shadow-xl', aria: { label: 'Picture of myself' }, alt: 'A picture of me' %>
     </div>
 
     <div class="lg:w-8/12 self-center text-center lg:text-left">
-      <p class="text-gray-500 dark:text-gray-400 mb-3 text-sm">Senior fullstack web developer, Freelance, Open source enthusiast</p>
+      <p class="text-gray-600 dark:text-gray-400 mb-3 text-sm">Senior fullstack web developer, Freelance, Open source enthusiast</p>
       <p class="text-xl font-bold mb-3">Maxence Tisserant</p>
 
       <div class="mb-3 flex gap-4 justify-center lg:justify-start">
-        <%= link_to malt_url do %>
-          <%= image_tag 'malt.svg', class: 'w-10 h-auto dark:invert' %>
+        <%= link_to malt_url, aria: { label: 'Link to my profile on Malt' } do %>
+          <%= image_tag 'malt.svg', class: 'w-10 h-auto dark:invert', role: 'link', tabindex: 0, aria: { label: 'Malt logo' }, alt: 'Malt logo' %>
         <% end %>
-        <%= link_to github_url do %>
-          <%= image_tag 'github.svg', class: 'w-10 h-auto dark:invert' %>
+        <%= link_to github_url, aria: { label: 'Link to my profile on Github' } do %>
+          <%= image_tag 'github.svg', class: 'w-10 h-auto dark:invert', role: 'link', tabindex: 0, aria: { label: 'Github logo' }, alt: 'Github logo' %>
         <% end %>
-        <%= link_to linkedin_url do %>
-          <%= image_tag 'linkedin.svg', class: 'w-10 h-auto dark:invert' %>
+        <%= link_to linkedin_url, aria: { label: 'Link to my profile on Linkedin' } do %>
+          <%= image_tag 'linkedin.svg', class: 'w-10 h-auto dark:invert', role: 'link', tabindex: 0, aria: { label: 'Linkedin logo' }, alt: 'Linkedin logo' %>
         <% end %>
       </div>
 
       <p class="text-left mb-3">
-        My name is Maxence, and I'm a freelance web developer.
+        My name is Maxence, and I'm a freelance web developer in Paris.
         I'm also available, so do not hesitate to contact me if you think I'd fit in your project!
       </p>
 
