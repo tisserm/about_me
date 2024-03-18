@@ -1,10 +1,5 @@
 # TODO
 
-## P1
-
-### Changer la favicon
-- :wave: probablement
-
 ## P2
 
 ### Traduction fr/en
