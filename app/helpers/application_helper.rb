@@ -3,13 +3,13 @@
 module ApplicationHelper
   def navigation_links(mobile: false)
     links = [
-      { url: about_me_path, text: t('navbar.about_me') },
-      { url: resume_path, text: t('navbar.resume') },
-      { url: portfolio_path, text: t('navbar.portfolio') },
+      { url: about_me_path, text: t('navbar.about_me'), controller: 'home#about_me' },
+      { url: resume_path, text: t('navbar.resume'), controller: 'home#resume' },
+      { url: portfolio_path, text: t('navbar.portfolio'), controller: 'home#portfolio' },
       { url: malt_url, text: t('navbar.contact_me') }
     ]
 
-    links.map { |link| link_html(link, active: current_page?(link[:url]), mobile:) }.join.html_safe
+    links.map { |link| link_html(link, active: active_page?(link), mobile:) }.join.html_safe
   end
 
   def render_svg(path)
@@ -25,6 +25,10 @@ module ApplicationHelper
   end
 
   private
+
+  def active_page?(link)
+    current_page?(link[:url]) || link[:controller] == "#{controller.controller_name}##{controller.action_name}"
+  end
 
   def link_html(link, active: false, mobile: false)
     classes = if active && mobile
