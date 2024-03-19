@@ -1,5 +1,5 @@
 <div class="w-full mb-8">
-  <h1 class="text-center text-4xl mb-8">Hello world!</h1>
+  <h1 class="text-center text-4xl mb-8"><%= t 'about_me.header' %></h1>
 
   <figure class="flex flex-col lg:flex-row px-4" aria-label="About me section">
     <div class="lg:w-4/12">
@@ -7,7 +7,7 @@
     </div>
 
     <div class="lg:w-8/12 self-center text-center lg:text-left">
-      <p class="text-gray-600 dark:text-gray-400 mb-3 text-sm">Senior fullstack web developer, Freelance, Open source enthusiast</p>
+      <p class="text-gray-600 dark:text-gray-400 mb-3 text-sm"><%= t 'about_me.short_description' %></p>
       <p class="text-xl font-bold mb-3">Maxence Tisserant</p>
 
       <div class="mb-3 flex gap-4 justify-center lg:justify-start">
@@ -23,26 +23,22 @@
       </div>
 
       <p class="text-left mb-3">
-        My name is Maxence, and I'm a freelance web developer in Paris.
-        I'm also available, so do not hesitate to contact me if you think I'd fit in your project!
+        <%= t 'about_me.introduction' %>
       </p>
 
       <p class="text-left mb-3">
-        I graduated from a computer science school in 2020, and have been a full-stack web developer for almost 5 years.
-        I've worked as a developer since leaving school, on a wide variety of projects.
-        I specialize in back-end with Ruby on Rails, but I can also handle your full-stack projects.
-        Very curious by nature, I'm always ready to solve problems and take on new challenges.
+        <%= t 'about_me.short_resume' %>
       </p>
 
       <div class="flex justify-center lg:justify-start gap-4 mt-3">
         <%= link_to download_resume_path do %>
           <button type="button" class="text-lg inline-flex items-center rounded-md bg-gray-900 dark:bg-indigo-800 px-3 py-2 text-sm font-semibold text-white shadow-sm hover:bg-gray-700 dark:hover:bg-indigo-700 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-gray-900 dark:focus-visible:outline-indigo-800">
-            Download resume
+            <%= t 'about_me.download_resume' %>
           </button>
         <% end %>
         <%= link_to malt_url do %>
           <button type="button" class="text-lg inline-flex items-center rounded-md bg-gray-900 dark:bg-indigo-800 px-3 py-2 text-sm font-semibold text-white shadow-sm hover:bg-gray-700 dark:hover:bg-indigo-700 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-gray-900 dark:focus-visible:outline-indigo-800">
-            Contact me on Malt!
+            <%= t 'about_me.contact_me' %>
           </button>
         <% end %>
       </div>

@@ -28,4 +28,86 @@
 #       enabled: "ON"
 
 en:
-  hello: "Hello world"
+  title: 'About Maxence'
+
+  navbar:
+    about_me: 'About me'
+    resume: 'Resume & skills'
+    portfolio: 'Portfolio'
+    contact_me: 'Contact me on Malt'
+
+  about_me:
+    header: 'Hello world!'
+    short_description: 'Senior fullstack web developer, Freelance, Open source enthusiast'
+    introduction: >
+      My name is Maxence, and I'm a freelance web developer in Paris.
+      I'm also available, so please do not hesitate to contact me if you think I'd fit in your project!
+    short_resume: >
+      I graduated from a computer science school in 2020, and have been a full-stack web developer for almost 5 years.
+      I've worked as a developer since leaving school, on a wide variety of projects.
+      I specialize in back-end with Ruby on Rails, but I can also handle your full-stack projects.
+      Very curious by nature, I'm always ready to solve problems and take on new challenges.
+    download_resume: 'Download resume'
+    contact_me: 'Contact me on Malt!'
+
+  resume:
+    header: 'CV'
+    birth: "Born in France, I'm currently %{age} years old!"
+    education:
+      header: 'Education at EPITECH'
+      content_html: >
+        <br />
+        5-year course focusing on the mastery of low-level computer languages (mainly C and C++) and the usage of many programming languages (Ruby, Python, Java, etc.).
+        <br />
+        EPITECH taught me how to manage with any language and how to learn one efficiently, it also gave knowledge on devops and sysadmin to a certain extent.
+    manda_job:
+      header: 'Fullstack web developer at Manda (formerly Flatlooker)'
+      content_html: >
+        <br />
+        Development of a rental management web platform to help tenants, landlords, real estate agents and property managers with their property management needs.
+        <ul class="list-disc list-inside">
+          <li>Development of public and private web interfaces with Bootstrap, Hotwire and Vue.js</li>
+          <li>Development of back-end logic in Ruby (Ruby on Rails framework)</li>
+          <li>Writing of unit, integration and end-to-end tests</li>
+          <li>Application performance optimisation</li>
+        </ul>
+    future:
+      today: 'Today'
+      header: 'Maybe you?'
+      content_html: >
+        <br />
+        I'm available to work on your projects, so please
+      contact_me: 'contact me on Malt!'
+
+  skills:
+    header: 'Skills'
+    tech_skills:
+      header: 'Tech skills'
+      skills:
+        - name: 'Ruby / Rails'
+          rating: 5
+        - name: 'HTML & CSS'
+          rating: 4
+        - name: 'Hotwire'
+          rating: 4
+        - name: 'Vue.js'
+          rating: 3
+        - name: 'React'
+          rating: 2
+        - name: 'Git / Github'
+          rating: 5
+        - name: 'Heroku'
+          rating: 4
+    languages:
+      header: 'Languages'
+      skills:
+        - name: 'French'
+          rating: 5
+        - name: 'English'
+          rating: 5
+        - name: 'German'
+          rating: 3
+
+  portfolio:
+    header: 'Portfolio'
+    content: 'Soon™'

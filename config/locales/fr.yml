@@ -1,0 +1,114 @@
+# Files in the config/locales directory are used for internationalization and
+# are automatically loaded by Rails. If you want to use locales other than
+# English, add the necessary files in this directory.
+#
+# To use the locales, use `I18n.t`:
+#
+#     I18n.t "hello"
+#
+# In views, this is aliased to just `t`:
+#
+#     <%= t("hello") %>
+#
+# To use a different locale, set it with `I18n.locale`:
+#
+#     I18n.locale = :es
+#
+# This would use the information in config/locales/es.yml.
+#
+# To learn more about the API, please read the Rails Internationalization guide
+# at https://guides.rubyonrails.org/i18n.html.
+#
+# Be aware that YAML interprets the following case-insensitive strings as
+# booleans: `true`, `false`, `on`, `off`, `yes`, `no`. Therefore, these strings
+# must be quoted to be interpreted as strings. For example:
+#
+#     en:
+#       "yes": yup
+#       enabled: "ON"
+
+fr:
+  title: "À propos de Maxence"
+
+  navbar:
+    about_me: "À mon sujet"
+    resume: "CV et compétences"
+    portfolio: "Portfolio"
+    contact_me: "Me contacter sur Malt"
+
+  about_me:
+    header: "Hello world !"
+    short_description: "Développeur fullstack web senior, Freelance, Passionné d'open source"
+    introduction: >
+      Je m'appelle Maxence et je suis un développeur web freelance à Paris.
+      Je suis disponible actuellement donc n'hésitez pas à me contacter pour vos projets !
+    short_resume: >
+      J'ai eu mon diplôme EPITECH en 2020 et je suis développeur web depuis près de 5 ans.
+      J'ai travaillé en tant que développeur dès ma sortie d'école sur une grande variété de projets.
+      Je me suis spécialisé en backend avec Ruby on Rails mais je me débrouillerai très bien sur vos projets fullstack.
+      Curieux de nature, je suis toujours prêt à résoudre vos problèmes et à faire face à de nouveaux challenges.
+    download_resume: "Télécharger mon CV"
+    contact_me: "Contactez moi sur Malt !"
+
+  resume:
+    header: "CV"
+    birth: "Je suis né en France et j'ai actuellement %{age} ans !"
+    education:
+      header: "Formation chez EPITECH"
+      content_html: >
+        <br />
+        École en 5 ans qui se concentre sur la maitrise de langages bas-niveaux (comme le C et le C++) et l'utilisation d'une multitude d'autres langages (comme Ruby, Python, Java, etc.).
+        <br />
+        EPITECH m'a appris à me débrouiller avec n'importe quel langage et comment les apprendre de manière éfficace.
+        L'école m'a aussi donné des connaissances en devops et sysadmin, assez pour résoudre certaines problématiques.
+    manda_job:
+      header: "Développeur web fullstack chez Manda (ex. Flatlooker)"
+      content_html: >
+        <br />
+        Développement d'une plateforme de gestion location pour aider les locataires, propriétaires, agents et gestionnaires immobiliers dans leurs tâches locatives.
+        <ul class="list-disc list-inside">
+          <li>Développement d'interface web publique et privée avec Bootstrap, Hotwire et Vue.JS</li>
+          <li>Développement de logique back-end en Ruby (avec le framework Ruby on Rails)</li>
+          <li>Écriture de tests unitaires, d'intégration et end-to-end</li>
+          <li>Optimisation des performances de l'application</li>
+        </ul>
+    future:
+      today: "Aujourd'hui"
+      header: 'Vous, peut-être ?'
+      content_html: >
+        <br />
+        Je suis disponible pour travailler sur vos projets, donc n'hésitez pas à
+      contact_me: "me contacter sur Malt !"
+
+  skills:
+    header: "Compétences"
+    tech_skills:
+      header: "Compétences techniques"
+      skills:
+        - name: "Ruby / Rails"
+          rating: 5
+        - name: "HTML et CSS"
+          rating: 4
+        - name: "Hotwire"
+          rating: 4
+        - name: "Vue.js"
+          rating: 3
+        - name: "React"
+          rating: 2
+        - name: "Git / Github"
+          rating: 5
+        - name: "Heroku"
+          rating: 4
+    languages:
+      header: "Langues"
+      skills:
+        - name: "Français"
+          rating: 5
+        - name: "Anglais"
+          rating: 5
+        - name: "Allemand"
+          rating: 3
+
+  portfolio:
+    header: "Portfolio"
+    content: "Ça arrive bientôt, promis"

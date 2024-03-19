@@ -3,13 +3,25 @@
 module ApplicationHelper
   def navigation_links(mobile: false)
     links = [
-      { url: root_path, text: 'About me' },
-      { url: resume_path, text: 'Resume & skills' },
-      { url: portfolio_path, text: 'Portfolio' },
-      { url: malt_url, text: 'Contact me on Malt' }
+      { url: about_me_path, text: t('navbar.about_me') },
+      { url: resume_path, text: t('navbar.resume') },
+      { url: portfolio_path, text: t('navbar.portfolio') },
+      { url: malt_url, text: t('navbar.contact_me') }
     ]
 
     links.map { |link| link_html(link, active: current_page?(link[:url]), mobile:) }.join.html_safe
+  end
+
+  def render_svg(path)
+    File.open(Rails.root.join("app/assets/svg/#{path}.svg"), 'rb') do |file|
+      raw file.read
+    end
+  end
+
+  def switch_locale_url
+    new_locale = locale == :en ? :fr : :en
+
+    url_for(locale: new_locale)
   end
 
   private

@@ -10,7 +10,10 @@ Rails.application.routes.draw do
   # Defines the root path route ("/")
   root 'home#about_me'
 
-  get 'download_resume', to: 'home#download_resume'
-  get 'resume', to: 'home#resume'
-  get 'portfolio', to: 'home#portfolio'
+  scope '(:locale)', locale: /en|fr/ do
+    get 'about_me', to: 'home#about_me'
+    get 'download_resume', to: 'home#download_resume'
+    get 'resume', to: 'home#resume'
+    get 'portfolio', to: 'home#portfolio'
+  end
 end
