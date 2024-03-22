@@ -56,27 +56,22 @@ fr:
     education:
       header: "Formation chez EPITECH"
       content_html: >
-        <br />
         École en 5 ans qui se concentre sur la maitrise de langages bas-niveaux (comme le C et le C++) et l'utilisation d'une multitude d'autres langages (comme Ruby, Python, Java, etc.).
         <br />
         EPITECH m'a appris à me débrouiller avec n'importe quel langage et comment les apprendre de manière éfficace.
         L'école m'a aussi donné des connaissances en devops et sysadmin, assez pour résoudre certaines problématiques.
     manda_job:
       header: "Développeur web fullstack chez Manda (ex. Flatlooker)"
-      content_html: >
-        <br />
-        Développement d'une plateforme de gestion location pour aider les locataires, propriétaires, agents et gestionnaires immobiliers dans leurs tâches locatives.
-        <ul class="list-disc list-inside">
-          <li>Développement d'interface web publique et privée avec Bootstrap, Hotwire et Vue.JS</li>
-          <li>Développement de logique back-end en Ruby (avec le framework Ruby on Rails)</li>
-          <li>Écriture de tests unitaires, d'intégration et end-to-end</li>
-          <li>Optimisation des performances de l'application</li>
-        </ul>
+      content_html: Développement d'une plateforme de gestion location pour aider les locataires, propriétaires, agents et gestionnaires immobiliers dans leurs tâches locatives.
+      tasks:
+        - Développement d'interface web publique et privée avec Bootstrap, Hotwire et Vue.JS
+        - Développement de logique back-end en Ruby (avec le framework Ruby on Rails)
+        - Écriture de tests unitaires, d'intégration et end-to-end
+        - Optimisation des performances de l'application
     future:
       today: "Aujourd'hui"
       header: 'Vous, peut-être ?'
       content_html: >
-        <br />
         Je suis disponible pour travailler sur vos projets, donc n'hésitez pas à
       contact_me: "me contacter sur Malt !"
 

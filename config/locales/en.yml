@@ -56,26 +56,21 @@ en:
     education:
       header: 'Education at EPITECH'
       content_html: >
-        <br />
         5-year course focusing on the mastery of low-level computer languages (mainly C and C++) and the usage of many programming languages (Ruby, Python, Java, etc.).
         <br />
         EPITECH taught me how to manage with any language and how to learn one efficiently, it also gave knowledge on devops and sysadmin to a certain extent.
     manda_job:
       header: 'Fullstack web developer at Manda (formerly Flatlooker)'
-      content_html: >
-        <br />
-        Development of a rental management web platform to help tenants, landlords, real estate agents and property managers with their property management needs.
-        <ul class="list-disc list-inside">
-          <li>Development of public and private web interfaces with Bootstrap, Hotwire and Vue.js</li>
-          <li>Development of back-end logic in Ruby (Ruby on Rails framework)</li>
-          <li>Writing of unit, integration and end-to-end tests</li>
-          <li>Application performance optimisation</li>
-        </ul>
+      content_html: Development of a rental management web platform to help tenants, landlords, real estate agents and property managers with their property management needs.
+      tasks:
+        - Development of public and private web interfaces with Bootstrap, Hotwire and Vue.js
+        - Development of back-end logic in Ruby (Ruby on Rails framework)
+        - Writing of unit, integration and end-to-end tests
+        - Application performance optimisation
     future:
       today: 'Today'
       header: 'Maybe you?'
       content_html: >
-        <br />
         I'm available to work on your projects, so please
       contact_me: 'contact me on Malt!'
 

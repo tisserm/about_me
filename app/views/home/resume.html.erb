@@ -27,6 +27,7 @@
         <div class="basis-1/3 sm:basis-1/4 pr-7 text-right">09/2015 - 07/2020</div>
         <div class="basis-2/3 sm:basis-3/4 pl-7">
           <strong><%= t 'resume.education.header' %></strong>
+          <br />
           <%= t 'resume.education.content_html' %>
         </div>
       </div>
@@ -38,7 +39,13 @@
         <div class="basis-1/3 sm:basis-1/4 pr-7 text-right">09/2019 - 02/2024</div>
         <div class="basis-2/3 sm:basis-3/4 pl-7">
           <strong><%= t 'resume.manda_job.header' %></strong>
+          <br />
           <%= t 'resume.manda_job.content_html' %>
+          <ul class="list-disc list-inside">
+            <% t('resume.manda_job.tasks').each do |task| %>
+              <li><%= task %></li>
+            <% end %>
+          </ul>
         </div>
       </div>
     </div>
@@ -49,6 +56,7 @@
         <div class="basis-1/3 sm:basis-1/4 pr-7 text-right">03/2024 - <%= t 'resume.future.today' %></div>
         <div class="basis-2/3 sm:basis-3/4 pl-7">
           <strong><%= t 'resume.future.header' %></strong>
+          <br />
           <%= t 'resume.future.content_html' %>
           <%= link_to malt_url, class: 'underline', aria: { label: 'Link to my profile on Malt' } do %>
             <%= t 'resume.future.contact_me' %>
