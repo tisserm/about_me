@@ -40,3 +40,5 @@
 # IDE files
 .idea
 .idea.old
+
+/config/credentials/production.key
