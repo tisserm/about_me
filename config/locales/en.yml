@@ -51,7 +51,7 @@ en:
     contact_me: 'Contact me on Malt!'
 
   resume:
-    header: 'CV'
+    header: 'Resume'
     birth: "Born in France, I'm currently %{age} years old!"
     education:
       header: 'Education at EPITECH'
@@ -73,6 +73,7 @@ en:
       content_html: >
         I'm available to work on your projects, so please
       contact_me: 'contact me on Malt!'
+    download_resume: 'Download PDF resume'
 
   skills:
     header: 'Skills'

@@ -107,4 +107,12 @@
       </div>
     </div>
   </div>
+
+  <div class="flex justify-center gap-4 mt-14">
+    <%= link_to download_resume_path do %>
+      <button type="button" class="text-lg inline-flex items-center rounded-md bg-gray-900 dark:bg-indigo-800 px-3 py-2 text-sm font-semibold text-white shadow-sm hover:bg-gray-700 dark:hover:bg-indigo-700 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-gray-900 dark:focus-visible:outline-indigo-800">
+        <%= t 'resume.download_resume' %>
+      </button>
+    <% end %>
+  </div>
 </div>

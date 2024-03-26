@@ -74,6 +74,8 @@ fr:
       content_html: >
         Je suis disponible pour travailler sur vos projets, donc n'hésitez pas à
       contact_me: "me contacter sur Malt !"
+    download_resume: "Télécharger mon CV en PDF"
+
 
   skills:
     header: "Compétences"
