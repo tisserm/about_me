@@ -107,4 +107,11 @@ fr:
 
   portfolio:
     header: "Portfolio"
-    content: "Ça arrive bientôt, promis"
+    soon: "Ça arrive bientôt !"
+    previous_projects_header: "Projets précédents"
+    opensource_projects_header: "Projets open-source"
+    opensource_projects:
+      - name: "temporal_enum"
+        link: "https://rubygems.org/gems/temporal_enum"
+        logo: "rubygems"
+        description: "Enrichissement des enums d'ActiveRecord avec des méthodes de progression temporelle"

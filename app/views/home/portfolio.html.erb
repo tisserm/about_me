@@ -1,5 +1,27 @@
 <div class="w-full">
   <h1 class="text-center text-4xl mb-8"><%= t 'portfolio.header' %></h1>
 
-  <h2 class="text-center text-2xl"><%= t 'portfolio.content' %></h2>
+  <h2 class="text-center text-2xl my-8 mt-14"><%= t 'portfolio.opensource_projects_header' %></h2>
+
+  <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 px-5">
+    <% t('portfolio.opensource_projects').each do |opensource_project| %>
+      <%= link_to opensource_project[:link], target: '_blank' do %>
+        <div class="rounded-md border-2 dark:border-gray-300 border-gray-700 min-h-24">
+          <div class="bg-[#e9573f] dark:bg-[#B94A3F] min-h-10 p-2 rounded-t flex items-center justify-center gap-2">
+            <%= render_svg opensource_project[:logo] %>
+            <span class=""><%= opensource_project[:name] %></span>
+          </div>
+          <div class="h-px bg-black dark:bg-gray-300">
+          </div>
+          <div class="p-2">
+            <%= opensource_project[:description] %>
+          </div>
+        </div>
+      <% end %>
+    <% end %>
+  </div>
+
+  <h2 class="text-center text-2xl my-8 mt-14"><%= t 'portfolio.previous_projects_header' %></h2>
+
+  <h3 class="text-center text-xl my-5 dark:text-slate-400 text-gray-700"><%= t 'portfolio.soon' %></h3>
 </div>
