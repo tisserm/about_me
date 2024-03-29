@@ -6,7 +6,7 @@ module ApplicationHelper
       { url: about_me_path, text: t('navbar.about_me'), controller: 'home#about_me' },
       { url: resume_path, text: t('navbar.resume'), controller: 'home#resume' },
       { url: portfolio_path, text: t('navbar.portfolio'), controller: 'home#portfolio' },
-      { url: malt_url, text: t('navbar.contact_me') }
+      { url: malt_url, text: t('navbar.contact_me'), options: { target: '_blank' } }
     ]
 
     links.map { |link| link_html(link, active: active_page?(link), mobile:) }.join.html_safe
@@ -41,7 +41,7 @@ module ApplicationHelper
                 nav_item_classes
               end
 
-    link_to link[:text], link[:url], class: classes
+    link_to link[:text], link[:url], class: classes, **(link[:options] || {})
   end
 
   def nav_item_classes

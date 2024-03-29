@@ -11,13 +11,13 @@
       <p class="text-xl font-bold mb-3">Maxence Tisserant</p>
 
       <div class="mb-3 flex gap-4 justify-center lg:justify-start">
-        <%= link_to malt_url, aria: { label: 'Link to my profile on Malt' } do %>
+        <%= link_to malt_url, aria: { label: 'Link to my profile on Malt' }, target: '_blank' do %>
           <%= image_tag 'malt.svg', class: 'w-10 h-auto dark:invert', role: 'link', tabindex: 0, aria: { label: 'Malt logo' }, alt: 'Malt logo' %>
         <% end %>
-        <%= link_to github_url, aria: { label: 'Link to my profile on Github' } do %>
+        <%= link_to github_url, aria: { label: 'Link to my profile on Github' }, target: '_blank' do %>
           <%= image_tag 'github.svg', class: 'w-10 h-auto dark:invert', role: 'link', tabindex: 0, aria: { label: 'Github logo' }, alt: 'Github logo' %>
         <% end %>
-        <%= link_to linkedin_url, aria: { label: 'Link to my profile on Linkedin' } do %>
+        <%= link_to linkedin_url, aria: { label: 'Link to my profile on Linkedin' }, target: '_blank' do %>
           <%= image_tag 'linkedin.svg', class: 'w-10 h-auto dark:invert', role: 'link', tabindex: 0, aria: { label: 'Linkedin logo' }, alt: 'Linkedin logo' %>
         <% end %>
       </div>
@@ -36,7 +36,7 @@
             <%= t 'about_me.download_resume' %>
           </button>
         <% end %>
-        <%= link_to malt_url do %>
+        <%= link_to malt_url, target: '_blank' do %>
           <button type="button" class="text-lg inline-flex items-center rounded-md bg-gray-900 dark:bg-indigo-800 px-3 py-2 text-sm font-semibold text-white shadow-sm hover:bg-gray-700 dark:hover:bg-indigo-700 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-gray-900 dark:focus-visible:outline-indigo-800">
             <%= t 'about_me.contact_me' %>
           </button>
